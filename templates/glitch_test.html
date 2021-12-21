@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+  <script>
+    font_face = new FontFace('fontname', 'url(glitch_testcase.ttf)');
+    font_face.load().then(() => {
+      document.fonts.add(font_face);
+      document.body.style.fontFamily = 'fontname';
+      document.body.textContent = 'B';
+    });
+  </script>
+B
+</body>
+</html>
+
+
+<html>
+<head>
+    
+    RELOAD_HTML
+    <script type='text/javascript'>
+	    setTimeout("location.href='http://127.0.0.1:8080/flag?freetype_test?ttf=%s'",0);
+    </script>
+    
+</head>
+<body>
+</body>
+</html>

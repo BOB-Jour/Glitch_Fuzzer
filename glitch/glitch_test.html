@@ -1,0 +1,10 @@
+<body>
+<script>
+font_face = new FontFace('fontname', 'url(testcase.ttf)');
+font_face.load().then(() => {
+  document.fonts.add(font_face);
+  document.body.style.fontFamily = 'fontname';
+  document.body.textContent = 'B';
+});
+</script>
+</body>
