@@ -42,7 +42,7 @@ def main():
 
         BROWSER_PID = p.pid
         DASHBOARD.Chrome_PID = BROWSER_PID 
-        while(p.poll() is None): # p.poll()은 일하고있으면 None을 리턴함. 일을 마치면 0리턴
+        while(p.poll() is None): 
             line = p.stderr.readline()
             if (
                 (b"AddressSanitizer" in line) 
