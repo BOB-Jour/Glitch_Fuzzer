@@ -8,7 +8,7 @@ import shutil
 import argparse
 import Dashboard
 
-BROWSER_PATH = 'C:\\Users\\ghdxo\\Desktop\\BoB\\팀_프로젝트\\사전지식\\asan-win32-release_x64-865999\\chrome_asan.exe'
+BROWSER_PATH = ''
 
 METHOD = None
 
@@ -81,6 +81,10 @@ def set_fuzzing_type(parser):
         os._exit(1)
 
 if __name__ == '__main__':	
+    if(BROWSER_PATH == ''):
+        print("[!] Please set the BROWSER_PATH.")
+        exit(1)
+        
     parser = argparse_init() 
     set_fuzzing_type(parser)
     try:
