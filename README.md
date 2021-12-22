@@ -4,10 +4,12 @@
 
 - CVE-2020-15999 취약점의 루트커즈와 비슷한 이유로 발생할 수 있는 취약점들을 탐지하는 것이 목적입니다.
 
-- 퍼징 테스트 방법
+- Glitch Fuzzer에 대한 문서는 추후 깃헙에 공개될 예정입니다.
+
+#### Fuzzing Test 방법
 
   ```
-  # step0 - 필수 설치
+  # step0 - 필수 모듈 설치
   pip3 install pypng
   pip3 install numpy
   
